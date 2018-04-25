@@ -13,7 +13,6 @@ body {
 `;
 
 const initHtml = `
-<h1>===== HC.js =====</h1>
 <style>
 ${style}
 </style>
