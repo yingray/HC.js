@@ -10,9 +10,20 @@ body {
 .yellow {
   color: yellow;
 }
+#cr{
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  font-size: 15px;
+  background: #222;
+  color: #888;
+  padding: 9px;
+  border-radius: 5px;
+}
 `;
 
 const initHtml = `
+<div id="cr">Powered by HC.js</div>
 <style>
 ${style}
 </style>
