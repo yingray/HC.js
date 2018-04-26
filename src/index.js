@@ -3,12 +3,13 @@ body {
   background: black;
   color: lightGray;
   font-family: 'COURIER';
+  counter-reset: item;
 }
 .red {
-  color: red;
+  color: #f37;
 }
 .yellow {
-  color: yellow;
+  color: #efa;
 }
 #cr{
   position: fixed;
@@ -19,6 +20,28 @@ body {
   color: #888;
   padding: 9px;
   border-radius: 5px;
+}
+ol {
+  padding:0;
+  list-style: none;
+}
+li {
+  counter-increment: item;
+  margin-bottom: 5px;
+  border-bottom: solid 1px #333;
+}
+li:hover {
+ background-color: #333;
+ cursor:pointer;
+}
+li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: #333;
+  color: #888;
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
 }
 `;
 
@@ -39,5 +62,5 @@ const logger = (obj, color) => {
   document.getElementById("console").appendChild(node);
 };
 window.console.log = obj => logger(obj);
-window.console.error = obj => logger(obj, 'red');
-window.console.debug = obj =>  logger(obj, 'yellow');
+window.console.error = obj => logger(obj, "red");
+window.console.debug = obj => logger(obj, "yellow");
