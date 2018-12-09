@@ -8,7 +8,7 @@ HC.js prints the console log in HTML to make the quick DEMO on Codepen!
 
 * Click `Settings` -> `Javascript`
 
-* Add `http://cdn.rawgit.com/yingray/HC.js/master/hc.min.js` to `Add External Scripts/Pens`
+* Add `https://cdn.jsdelivr.net/gh/yingray/HC.js@master/hc.min.js` to `Add External Scripts/Pens`
 
 * Click `Save & Close`
 
